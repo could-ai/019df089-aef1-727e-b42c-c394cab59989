@@ -1,47 +1,45 @@
-# Flutter Counter Demo
+# MDC Smart Audit Dashboard
 
-Flutter Counter Demo adalah aplikasi pemula sederhana yang dihasilkan dengan [CouldAI](https://could.ai). Aplikasi ini mendemonstrasikan layar Flutter stateful dasar dengan penghitung (counter), tombol aksi mengambang (floating action button), tema Material, dan startup aplikasi berbasis rute.
+Aplikasi MDC Smart Audit Dashboard adalah antarmuka modern yang dibuat dengan [CouldAI](https://could.ai). Aplikasi ini menyajikan tampilan panel kontrol yang rapi, responsif, dan interaktif untuk kebutuhan pemantauan data audit. 
 
 ## Fitur Aplikasi
 
-- Menampilkan layar utama dengan judul `Flutter Demo Home Page`
-- Menampilkan nilai penghitung saat ini
-- Menambahkan penghitung saat tombol aksi mengambang ditekan
-- Menggunakan skema warna Material Design yang dihasilkan dari warna dasar ungu tua
-- Menyembunyikan banner debug untuk pratinjau yang lebih bersih
-- Memulai melalui rute `/` menggunakan konfigurasi `routes` pada Flutter
+- **Tampilan Antarmuka Responsif:** Layar dapat beradaptasi secara otomatis untuk platform mobile (menggunakan Drawer) dan Desktop/Web (menggunakan Sidebar sisi kiri).
+- **Sidebar Navigasi:** Memuat menu utama seperti Dashboard, Audit, Laporan, Peringatan, Pengaturan, dan menu Keluar.
+- **Header:** Menyediakan judul ikhtisar, fitur kolom pencarian interaktif, dan avatar profil pengguna.
+- **Kartu Metrik (Metrics):** Menampilkan ringkasan data penting dalam bentuk kartu untuk "Total Audit", jumlah yang "Lolos", "Gagal", dan "Peringatan".
+- **Grafik Aktivitas Audit (Chart):** Representasi visual bar chart sederhana yang menunjukkan aktivitas harian.
+- **Daftar Peringatan Terbaru:** Panel khusus yang menyoroti peringatan sistem, pelanggaran keamanan, atau tenggat waktu yang terlewat.
 
-## Dibuat Dengan
+## Dibangun Menggunakan
 
 - Flutter
 - Dart
-- Material Design
-- HTML5 (untuk situs web dokumentasi)
+- Material Design 3
 
 ## Struktur Proyek
 
 ```text
 lib/
-  main.dart      Titik masuk aplikasi, pengaturan rute, dan layar penghitung
-pubspec.yaml     Metadata paket dan dependensi Flutter
-index.html       File HTML situs web untuk mendokumentasikan aplikasi
-android/         File proyek Android
-ios/             File proyek iOS
-web/             File proyek Web
-macos/           File proyek macOS
-windows/         File proyek Windows
-linux/           File proyek Linux
+  main.dart      Titik awal aplikasi, berisi konfigurasi rute, dan antarmuka UI Dashboard
+pubspec.yaml     Metadata paket dan pengaturan dependensi Flutter
+android/         Berkas proyek Android
+ios/             Berkas proyek iOS
+web/             Berkas proyek Web
+macos/           Berkas proyek macOS
+windows/         Berkas proyek Windows
+linux/           Berkas proyek Linux
 ```
 
-## Mulai Menggunakan
+## Cara Menjalankan
 
-Instal Flutter, kemudian ambil dependensinya:
+Pastikan Anda sudah menginstal Flutter, lalu jalankan perintah berikut untuk mengunduh dependensi:
 
 ```bash
 flutter pub get
 ```
 
-Jalankan demo:
+Untuk menjalankan aplikasi:
 
 ```bash
 flutter run
@@ -49,14 +47,14 @@ flutter run
 
 ## Catatan Pengembangan
 
-Logika aplikasi berada di `lib/main.dart`. Perbarui `MyApp` untuk mengubah pengaturan tingkat aplikasi seperti tema dan rute, dan perbarui `MyHomePage` untuk mengubah UI atau perilaku layar penghitung.
+Seluruh logika UI dan antarmuka Dashboard berada pada `lib/main.dart`. Anda dapat menyesuaikan warna tema pada konfigurasi `MaterialApp`, atau memodifikasi tata letak serta data pada _widget_ `DashboardScreen` untuk integrasi _backend_ tingkat lanjut.
 
 ## Tentang CouldAI
 
-Aplikasi ini dibuat dengan [CouldAI](https://could.ai), pembuat aplikasi AI untuk aplikasi lintas platform. CouldAI mengubah prompt menjadi aplikasi asli iOS, Android, Web, dan Desktop yang nyata dengan agen AI otonom yang merancang, membangun, menguji, menerapkan, dan mengulangi aplikasi yang siap produksi.
+Aplikasi ini dibuat menggunakan [CouldAI](https://could.ai), sebuah pembuat aplikasi cerdas bertenaga AI untuk berbagai platform lintas perangkat. CouldAI mengubah perintah berupa teks menjadi aplikasi asli (_native_) siap pakai untuk iOS, Android, Web, dan Desktop. Semuanya dikerjakan oleh agen AI otonom yang bertugas merancang arsitektur, membangun, menguji, melakukan *deploy*, hingga mengembangkan aplikasi siap produksi secara otomatis.
 
-Gunakan CouldAI di [could.ai](https://could.ai) untuk membangun dan mengulangi aplikasi lintas platform dengan AI.
+Gunakan CouldAI di [could.ai](https://could.ai) untuk membangun dan melakukan iterasi aplikasi lintas platform dengan bantuan AI.
 
 ## Lisensi
 
-Tambahkan lisensi sebelum mendistribusikan aplikasi ini ke publik.
+Tambahkan lisensi yang sesuai sebelum mendistribusikan aplikasi ini ke publik.
